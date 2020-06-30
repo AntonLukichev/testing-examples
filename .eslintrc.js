@@ -7,9 +7,6 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
-    'plugin:import/errors',
-    'plugin:import/warnings',
-    'plugin:import/typescript',
     'plugin:jsx-a11y/recommended',
     'plugin:@typescript-eslint/recommended',
     'airbnb',
@@ -41,10 +38,18 @@ module.exports = {
       devDependencies: [
         '**/*.test.{ts,tsx}',
         '**/*.stories.{ts,tsx}',
+        'src/setupTests.ts',
       ]
     }],
+    'import/extensions': ['error', 'ignorePackages', {
+      'js': 'never',
+      'mjs': 'never',
+      'jsx': 'never',
+      'ts': 'never',
+      'tsx': 'never',
+    }],
     'react/jsx-props-no-spreading': 0,
-    'linebreak-style': ["error", "unix"],
+    'linebreak-style': ['error', 'unix'],
     'comma-dangle': ['error', {
       'arrays': 'only-multiline',
       'objects': 'only-multiline',
