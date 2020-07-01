@@ -5,7 +5,7 @@ Advanced testing with React Testing Library
 
 ## Getting Started
 Install dependencies
-```shell script 
+```shell script
 yarn
 ```
 
@@ -14,3 +14,6 @@ Run tests
 yarn test
 ```
 
+## Examples
+
+[Mock Console](./src/example/mocks/console_log.test.ts) - mock console.log (and info/warn/error) functions
