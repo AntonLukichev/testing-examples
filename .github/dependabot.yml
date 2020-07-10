@@ -1,0 +1,25 @@
+version: 2
+updates:
+  # Enable version updates for npm
+  - package-ecosystem: "npm"
+    # Look for `package.json` and `lock` files in the `root` directory
+    directory: "/"
+    # Check the npm registry for updates every day (weekdays)
+    schedule:
+      interval: "daily"
+      time: "05:00"
+      timezone: "Europe/Moscow"
+    target-branch: "next"
+    open-pull-requests-limit: 10
+    # Specify labels for npm pull requests
+    labels:
+      - "dependencies"
+    commit-message:
+      prefix: "npm"
+      include: "scope"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      # Check for updates to GitHub Actions every weekday
+      interval: "weekly"
