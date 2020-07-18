@@ -17,7 +17,8 @@ yarn test
 ## Examples
 
 ### Common
-[toEqual](./src/example/common/toEqual.test.ts) - examples for equals objects/functions
+- [sleep](./src/example/common/sleep.test.ts) - setTimeout and sleepTest function
+- [toEqual](./src/example/common/toEqual.test.ts) - examples for equals objects/functions
 
 ### Mock's
-[Mock Console](./src/example/mocks/console_log.test.ts) - mock console.log (and info/warn/error) functions
+- [Mock Console](./src/example/mocks/console_log.test.ts) - mock console.log (and info/warn/error) functions
